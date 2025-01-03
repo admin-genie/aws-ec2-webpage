@@ -1,6 +1,8 @@
-# ec2meta-webpage #
-- - -
-## 1.설치 패키지
+# AWS EC2 Metadata Webpage
+📌실습 링크 
+[![Naver Blog Badge](https://img.shields.io/badge/Naver%20Blog-03C75A?style=flat&logo=Naver&logoColor=white)](https://blog.naver.com/genie290/223348121840)
+---
+## 1. 설치 패키지
 #### Apache2 , PHP 5.4
 #### CentOS/AWS Linux 기준
 ```
@@ -25,8 +27,8 @@ unzip awscliv2.zip
 sudo ./aws/install
 sudo cd /var/www/html/ && sudo git clone https://github.com/kimdragon50/ec2meta-webpage.git
 ```
-_Amazonlinux 사용할 경우에는 awscli 설치과정이 필요없음._
-- - -
+_Amazonlinux 사용할 경우에는 awscli 설치 과정이 필요하지 않음_
+
 ## 2. 구성 테스트
 #### 설치 이후 
 #### Apache Daemon 정상작동 유무 점검
@@ -82,6 +84,6 @@ reservation-id: r-05fa2da8daaac6eb4
 security-groups: SSH_WEB_FTP_ICMP
 user-data: not available
 ```
-#### AWS EC2 Meta-Data WebPage 출력 화면
+#### AWS EC2 Metadata Webpage 출력 화면
 - http://MY_IP/ec2meta-webpage/index.pnp
 ![AWS EC2 Meta Data 2024](https://user-images.githubusercontent.com/11262759/71781799-1c463b80-3016-11ea-88a4-543dae8858ae.png)
