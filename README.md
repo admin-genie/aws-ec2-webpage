@@ -31,7 +31,7 @@ _Amazonlinux 사용할 경우에는 awscli 설치 과정이 필요하지 않음_
 
 ## 2. 구성 테스트
 #### 설치 이후 
-#### Apache Daemon 정상작동 유무 점검
+#### Apache Daemon 정상 작동 유무 점검
 ```
 ec2-user@ip-10-1-1-148 ~]$ sudo systemctl status httpd
 ● httpd.service - The Apache HTTP Server
@@ -55,7 +55,7 @@ ec2-user@ip-10-1-1-148 ~]$ sudo systemctl status httpd
  1월 05 08:35:59 ip-10-1-1-148.ap-northeast-2.compute.internal systemd[1]: Starting The Apache HTTP Server...
  1월 05 08:35:59 ip-10-1-1-148.ap-northeast-2.compute.internal systemd[1]: Started The Apache HTTP Server.
  ```
- #### aws cli 기반의 ec2meta-data 정보 확인
+ #### aws cli 기반 ec2meta-data 정보 확인
  ```
  [ec2-user@ip-10-1-1-148 ~]$ ec2-metadata --all
 ami-id: ami-0d59ddf55cdda6e21
